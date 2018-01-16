@@ -1,0 +1,24 @@
+Validation set
+
+ndcg_cut_10\s
+absolute_discounting {'best_param': '0.9', 'score': 0.39503548387096776}
+dirichlet_prior {'best_param': '500', 'score': 0.4054741935483872}
+jelinek_mercer {'best_param': '0.9', 'score': 0.36758709677419354}
+
+
+map_cut_1000
+absolute_discounting {'best_param': '0.9', 'score': 0.2322258064516129}
+dirichlet_prior {'best_param': '500', 'score': 0.239858064516129}
+jelinek_mercer {'best_param': '0.9', 'score': 0.22144516129032252}
+
+
+^P_5\s
+absolute_discounting {'best_param': '0.9', 'score': 0.37333225806451614}
+dirichlet_prior {'best_param': '500', 'score': 0.39333225806451605}
+jelinek_mercer {'best_param': '0.9', 'score': 0.37333225806451614}
+
+
+recall_1000
+absolute_discounting {'best_param': '0.9', 'score': 0.6666096774193547}
+dirichlet_prior {'best_param': '500', 'score': 0.6269354838709679}
+jelinek_mercer {'best_param': '0.9', 'score': 0.6077935483870969}

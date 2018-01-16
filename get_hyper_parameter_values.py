@@ -8,8 +8,8 @@ filenames = ['jelinek_mercer', 'dirichlet_prior', 'absolute_discounting']
 
 files = sorted([f for f in os.listdir('results_run') if re.match('|'.join(filenames), f)])
 
-# measures = ["ndcg_cut_10\s", "map_cut_1000"]
-measures = ["ndcg_cut_10\s"]
+measures = ["ndcg_cut_10\s", "map_cut_1000", "^P_5\s", "recall_1000"]
+# measures = ["ndcg_cut_10\s"]
 
 for measure in measures:
 	d = {}
@@ -20,11 +20,11 @@ for measure in measures:
 		scores = [float(line.split('\t')[2]) for line in result.stdout.split('\n') if len(line.split('\t')) == 3]
 		# score = float(result.stdout.strip().split('\t')[2])
 		
-		print(scores)
+		# print(scores)
 
-		plt.hist(scores)
-		plt.show() 
-		
+		# plt.hist(scores)
+		# plt.show() 
+
 		score = sum(scores)/len(scores)
 		param = re.search(re.compile('\d.\d*'), file).group()
 		lm = re.search(re.compile('[a-z_a-z]*'), file).group()
