@@ -3,3 +3,4 @@ index/
 results_run/
 clean_results/
 reduced_vectors_google.txt
+.DS_Store
